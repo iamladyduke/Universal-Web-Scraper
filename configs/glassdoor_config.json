@@ -1,0 +1,40 @@
+{
+  "base_url": "https://www.glassdoor.co.uk/Job",
+  "item_selector": "li.react-job-listing",
+  "fields": {
+    "title": {
+      "selector": "a.jobLink",
+      "attribute": "text"
+    },
+    "company": {
+      "selector": "a.job-search-key-l2wjgv",
+      "attribute": "text"
+    },
+    "location": {
+      "selector": "span.location",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": "div.job-search-key-srfzjx",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "a.jobLink",
+      "attribute": "href"
+    },
+    "date": {
+      "selector": "span.date",
+      "attribute": "text"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "?p={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 1.5,
+    "delay_max": 2.5
+  },
+  "max_items": 5000
+} 

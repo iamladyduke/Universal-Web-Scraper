@@ -1,0 +1,40 @@
+{
+  "base_url": "https://builtwith.com",
+  "item_selector": "div.tech-item, .technology-item, .tech-listing",
+  "fields": {
+    "technology": {
+      "selector": "h3.tech-name, .technology-name, .tech-title",
+      "attribute": "text"
+    },
+    "category": {
+      "selector": ".tech-category, .category, .tech-type",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": ".tech-description, .description, .tech-details",
+      "attribute": "text"
+    },
+    "website": {
+      "selector": "a.website-link, .site-url",
+      "attribute": "href"
+    },
+    "usage_count": {
+      "selector": ".usage-count, .count, .installs",
+      "attribute": "text"
+    },
+    "last_updated": {
+      "selector": ".last-updated, .update-date, .timestamp",
+      "attribute": "text"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "?page={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 2.0,
+    "delay_max": 3.0
+  },
+  "max_items": 5000
+} 

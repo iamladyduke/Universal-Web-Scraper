@@ -1,0 +1,40 @@
+{
+  "base_url": "https://www.linkedin.com/jobs/search",
+  "item_selector": "div.base-card",
+  "fields": {
+    "title": {
+      "selector": "h3.base-search-card__title",
+      "attribute": "text"
+    },
+    "company": {
+      "selector": "h4.base-search-card__subtitle",
+      "attribute": "text"
+    },
+    "location": {
+      "selector": "span.job-search-card__location",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": "div.base-search-card__metadata",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "a.base-card__full-link",
+      "attribute": "href"
+    },
+    "date": {
+      "selector": "time.job-search-card__listdate",
+      "attribute": "text"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "&start={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 2.0,
+    "delay_max": 3.0
+  },
+  "max_items": 5000
+} 

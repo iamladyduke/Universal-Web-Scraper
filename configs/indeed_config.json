@@ -1,0 +1,40 @@
+{
+  "base_url": "https://uk.indeed.com/jobs",
+  "item_selector": "div.job_seen_beacon",
+  "fields": {
+    "title": {
+      "selector": "h2.jobTitle a",
+      "attribute": "text"
+    },
+    "company": {
+      "selector": "span.companyName",
+      "attribute": "text"
+    },
+    "location": {
+      "selector": "div.companyLocation",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": "div.job-snippet",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "h2.jobTitle a",
+      "attribute": "href"
+    },
+    "date": {
+      "selector": "span.date",
+      "attribute": "text"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "&start={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 1.0,
+    "delay_max": 2.0
+  },
+  "max_items": 5000
+} 

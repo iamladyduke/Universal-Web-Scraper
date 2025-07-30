@@ -1,0 +1,40 @@
+{
+  "base_url": "https://example.com/jobs",
+  "item_selector": "div.job-item, .listing",
+  "fields": {
+    "title": {
+      "selector": "h2.title, .job-title",
+      "attribute": "text"
+    },
+    "company": {
+      "selector": ".company-name",
+      "attribute": "text"
+    },
+    "location": {
+      "selector": ".location",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": ".description",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "a.title",
+      "attribute": "href"
+    },
+    "date": {
+      "selector": ".date-posted",
+      "attribute": "text"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "?page={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 0.5,
+    "delay_max": 1.0
+  },
+  "max_items": 5000
+}

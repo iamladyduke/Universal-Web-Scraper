@@ -1,0 +1,40 @@
+{
+  "base_url": "https://builtwith.com/recent",
+  "item_selector": "div.site-card, .website-card, .site-item",
+  "fields": {
+    "website_url": {
+      "selector": "h3.site-url, .website-url, .site-name",
+      "attribute": "text"
+    },
+    "technologies": {
+      "selector": ".tech-list, .technologies, .tech-stack",
+      "attribute": "text"
+    },
+    "traffic_rank": {
+      "selector": ".traffic-rank, .rank, .alexa-rank",
+      "attribute": "text"
+    },
+    "country": {
+      "selector": ".country, .location, .site-country",
+      "attribute": "text"
+    },
+    "last_updated": {
+      "selector": ".last-updated, .update-date, .scan-date",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "a.site-link, .website-link",
+      "attribute": "href"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "?page={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 2.0,
+    "delay_max": 3.0
+  },
+  "max_items": 5000
+} 

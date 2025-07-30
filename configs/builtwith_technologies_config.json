@@ -1,0 +1,40 @@
+{
+  "base_url": "https://builtwith.com/technologies",
+  "item_selector": "div.tech-card, .technology-card, .tech-item",
+  "fields": {
+    "technology_name": {
+      "selector": "h2.tech-title, .technology-name, .tech-name",
+      "attribute": "text"
+    },
+    "category": {
+      "selector": ".tech-category, .category, .tech-type",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": ".tech-description, .description, .tech-summary",
+      "attribute": "text"
+    },
+    "usage_percentage": {
+      "selector": ".usage-percentage, .percentage, .usage-stats",
+      "attribute": "text"
+    },
+    "websites_using": {
+      "selector": ".websites-count, .usage-count, .sites-using",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "a.tech-link, .technology-link",
+      "attribute": "href"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "?page={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 2.0,
+    "delay_max": 3.0
+  },
+  "max_items": 5000
+} 
