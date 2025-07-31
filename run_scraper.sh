@@ -12,10 +12,11 @@ echo "Choose what to scrape:"
 echo "1. BuiltWith Technologies"
 echo "2. BuiltWith Websites"
 echo "3. Job Sites (Indeed, LinkedIn)"
-echo "4. Custom Website"
+echo "4. App Stores (Google Play, Apple App Store)"
+echo "5. Custom Website"
 echo "========================================"
 echo ""
-read -p "Enter your choice (1-4): " choice
+read -p "Enter your choice (1-5): " choice
 
 case $choice in
     1)
@@ -31,6 +32,10 @@ case $choice in
         python3 universal_scraper.py --config configs/indeed_config.json
         ;;
     4)
+        echo "Running App Store Scraper..."
+        python3 appstore_scraper.py
+        ;;
+    5)
         echo "Running Custom Website Scraper..."
         python3 universal_scraper.py --template
         echo ""

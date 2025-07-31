@@ -22,7 +22,8 @@ The program will ask you to choose:
 - **1** = BuiltWith Technologies (what tech companies use)
 - **2** = BuiltWith Websites (recently analyzed sites)
 - **3** = Job Sites (Indeed, LinkedIn jobs)
-- **4** = Custom Website (any website you want)
+- **4** = App Stores (Google Play, Apple App Store)
+- **5** = Custom Website (any website you want)
 
 ## 🎯 What Each Option Does
 
@@ -41,7 +42,12 @@ The program will ask you to choose:
 - **What you get**: CSV file with job titles, companies, locations, descriptions
 - **Use for**: Job market research, salary analysis
 
-### Option 4: Custom Website
+### Option 4: App Stores
+- **What it scrapes**: Google Play Store and Apple App Store
+- **What you get**: CSV file with app names, developers, ratings, prices, categories
+- **Use for**: App market research, competitive analysis, app discovery
+
+### Option 5: Custom Website
 - **What it scrapes**: Any website you configure
 - **What you get**: Custom data based on your configuration
 - **Use for**: Specific research needs

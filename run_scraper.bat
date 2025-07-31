@@ -11,10 +11,11 @@ echo Choose what to scrape:
 echo 1. BuiltWith Technologies
 echo 2. BuiltWith Websites  
 echo 3. Job Sites (Indeed, LinkedIn)
-echo 4. Custom Website
+echo 4. App Stores (Google Play, Apple App Store)
+echo 5. Custom Website
 echo ========================================
 echo.
-set /p choice="Enter your choice (1-4): "
+set /p choice="Enter your choice (1-5): "
 
 if "%choice%"=="1" (
     echo Running BuiltWith Technology Scraper...
@@ -26,6 +27,9 @@ if "%choice%"=="1" (
     echo Running Job Site Scraper...
     python3 universal_scraper.py --config configs/indeed_config.json
 ) else if "%choice%"=="4" (
+    echo Running App Store Scraper...
+    python3 appstore_scraper.py
+) else if "%choice%"=="5" (
     echo Running Custom Website Scraper...
     python3 universal_scraper.py --template
     echo.

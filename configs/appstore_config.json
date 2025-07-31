@@ -1,0 +1,56 @@
+{
+  "base_url": "https://apps.apple.com",
+  "item_selector": "div.we-srp__result, .app-item, .app-card, .result",
+  "fields": {
+    "app_name": {
+      "selector": "h3.we-srp__result__title, .app-title, .title, h2, h3",
+      "attribute": "text"
+    },
+    "developer": {
+      "selector": ".we-srp__result__subtitle, .developer, .publisher, .company",
+      "attribute": "text"
+    },
+    "rating": {
+      "selector": ".we-srp__result__rating, .rating, .stars, .score",
+      "attribute": "text"
+    },
+    "reviews_count": {
+      "selector": ".we-srp__result__rating, .reviews, .review-count",
+      "attribute": "text"
+    },
+    "price": {
+      "selector": ".we-srp__result__price, .price, .cost",
+      "attribute": "text"
+    },
+    "category": {
+      "selector": ".we-srp__result__category, .category, .genre",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": ".we-srp__result__description, .description, .summary",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "a.we-srp__result__link, .app-link, a",
+      "attribute": "href"
+    },
+    "size": {
+      "selector": ".we-srp__result__size, .size, .download-size",
+      "attribute": "text"
+    },
+    "age_rating": {
+      "selector": ".we-srp__result__age, .age-rating, .content-rating",
+      "attribute": "text"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "?start={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 2.0,
+    "delay_max": 3.0
+  },
+  "max_items": 5000
+} 

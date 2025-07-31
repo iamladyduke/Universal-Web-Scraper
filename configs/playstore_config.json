@@ -1,0 +1,56 @@
+{
+  "base_url": "https://play.google.com/store/apps",
+  "item_selector": "div.VfPpkd-WsjYwc, .VfPpkd-EScbFb, .app-item, .app-card",
+  "fields": {
+    "app_name": {
+      "selector": "h3.F9uFy, .app-title, .title, h2, h3",
+      "attribute": "text"
+    },
+    "developer": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc, .developer, .publisher, .company",
+      "attribute": "text"
+    },
+    "rating": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc-YLEF4c, .rating, .stars, .score",
+      "attribute": "text"
+    },
+    "reviews_count": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc-YLEF4c, .reviews, .review-count",
+      "attribute": "text"
+    },
+    "price": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc-YLEF4c, .price, .cost",
+      "attribute": "text"
+    },
+    "category": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc-YLEF4c, .category, .genre",
+      "attribute": "text"
+    },
+    "description": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc-YLEF4c, .description, .summary",
+      "attribute": "text"
+    },
+    "link": {
+      "selector": "a.VfPpkd-LgbsSe, .app-link, a",
+      "attribute": "href"
+    },
+    "size": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc-YLEF4c, .size, .download-size",
+      "attribute": "text"
+    },
+    "downloads": {
+      "selector": ".VfPpkd-EScbFb-JIbuQc-YLEF4c, .downloads, .installs",
+      "attribute": "text"
+    }
+  },
+  "pagination": {
+    "enabled": true,
+    "pattern": "?start={page}",
+    "max_pages": 100
+  },
+  "rate_limiting": {
+    "delay_min": 2.0,
+    "delay_max": 3.0
+  },
+  "max_items": 5000
+} 
